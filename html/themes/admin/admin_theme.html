@@ -445,7 +445,7 @@ jQuery(function($) {
 <{/capture}>
 
 
-<{if $xoops_dirname =="legacy" }>
+<{if $xoops_dirname == "legacy" && $currentModule->mXoopsModule->getVar('dirname') == "legacy" }>
 	<{$recommend_mark}>
 <{elseif $xoops_dirname == "legacyRender"}>
 	<{$recommend_mark}>
